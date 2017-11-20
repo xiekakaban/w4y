@@ -1,21 +1,21 @@
-package com.st.w4y.entity;
+package com.st.common.w4y.entity;
 
 import java.util.Date;
 
 /**
  * Created by ruantianbo on 2017/11/9.
  */
-public class M4YComment {
+public class W4YComment {
     private String id;
     private String content;
-    private M4YUser commentBy;
+    private W4YUser commentBy;
     private String star;
     private Date commentTime;
 
-    public M4YComment() {
+    public W4YComment() {
     }
 
-    public M4YComment(String content, M4YUser commentBy, String star, Date commentTime) {
+    public W4YComment(String content, W4YUser commentBy, String star, Date commentTime) {
         this.content = content;
         this.commentBy = commentBy;
         this.star = star;
@@ -30,11 +30,11 @@ public class M4YComment {
         this.content = content;
     }
 
-    public M4YUser getCommentBy() {
+    public W4YUser getCommentBy() {
         return commentBy;
     }
 
-    public void setCommentBy(M4YUser commentBy) {
+    public void setCommentBy(W4YUser commentBy) {
         this.commentBy = commentBy;
     }
 

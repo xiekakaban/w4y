@@ -1,4 +1,4 @@
-package com.st.w4y.crawler;
+package com.st.common.w4y.crawler;
 
 /**
  * Created by ruantianbo on 2017/11/13.
@@ -6,4 +6,5 @@ package com.st.w4y.crawler;
 public interface Pool {
     Executor getExecutor();
     void destroy();
+
 }

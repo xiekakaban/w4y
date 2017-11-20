@@ -1,19 +1,19 @@
-package com.st.w4y.entity;
+package com.st.common.w4y.entity;
 
 /**
  * Created by ruantianbo on 2017/11/9.
  */
-public class M4YSongUnion {
+public class W4YSongUnion {
     private String id;
     private String title;
     private String link;
-    private M4YUser creater;
+    private W4YUser creater;
     private int star;
 
-    public M4YSongUnion() {
+    public W4YSongUnion() {
     }
 
-    public M4YSongUnion(String id, String title, String link, M4YUser creater, int star) {
+    public W4YSongUnion(String id, String title, String link, W4YUser creater, int star) {
         this.id = id;
         this.title = title;
         this.link = link;
@@ -45,11 +45,11 @@ public class M4YSongUnion {
         this.link = link;
     }
 
-    public M4YUser getCreater() {
+    public W4YUser getCreater() {
         return creater;
     }
 
-    public void setCreater(M4YUser creater) {
+    public void setCreater(W4YUser creater) {
         this.creater = creater;
     }
 
@@ -59,5 +59,15 @@ public class M4YSongUnion {
 
     public void setStar(int star) {
         this.star = star;
+    }
+
+    public void setStarByString(String starStr){
+        int wanIndex = starStr.indexOf("万");
+
+        if(wanIndex != -1){
+            this.star = Integer.parseInt(starStr.substring(0,wanIndex))*10000;
+        } else{
+            this.star = Integer.parseInt(starStr);
+        }
     }
 }

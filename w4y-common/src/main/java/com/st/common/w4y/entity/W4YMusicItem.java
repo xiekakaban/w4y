@@ -1,4 +1,4 @@
-package com.st.w4y.entity;
+package com.st.common.w4y.entity;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import java.util.List;
  */
 
 
-public class M4YMusicItem {
+public class W4YMusicItem {
 
     private String id;
     private String name;
@@ -19,9 +19,9 @@ public class M4YMusicItem {
     private String lyric;
     private int totalComment;
 
-    private List<M4YComment> commentList;
+    private List<W4YComment> commentList;
 
-    public M4YMusicItem() {
+    public W4YMusicItem() {
     }
 
     public String getId() {
@@ -88,11 +88,11 @@ public class M4YMusicItem {
         this.totalComment = totalComment;
     }
 
-    public List<M4YComment> getCommentList() {
+    public List<W4YComment> getCommentList() {
         return commentList;
     }
 
-    public void setCommentList(List<M4YComment> commentList) {
+    public void setCommentList(List<W4YComment> commentList) {
         this.commentList = commentList;
     }
 }

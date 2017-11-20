@@ -1,4 +1,4 @@
-package com.st.w4y.util;
+package com.st.common.w4y.util;
 import sun.misc.BASE64Encoder;
 
 import java.io.UnsupportedEncodingException;
